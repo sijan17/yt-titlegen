@@ -25,7 +25,7 @@ export const youtubeRouter = router({
        * @see https://www.youtube.com/watch?v=FKkDUW4E2Qc
        */
       const url = `https://youtube.com/${input.alias}/videos`;
-      const browser = await puppeteer.launch({ headless: false });
+      const browser = await puppeteer.launch();
       const page = await browser.newPage();
       await page.goto(url);
 
